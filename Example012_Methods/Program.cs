@@ -60,25 +60,6 @@ int Method3()
 
 
 //Вид 4
-
-//  string Method4(int count, string c);
-//  {
-//      int i = 0;
-//      string result = String.Empty;
-
-//      while (i < count)
-//      {
-//          result = result + text;
-//          i++;
-//      }
-//      return result;
-//  }
-
-//  string result = Method4(10, "z");
-//  Console.WriteLine(result);
-
-
-
 string Method4(int count, string text)
 {
     string result = String.Empty;
@@ -88,8 +69,8 @@ string Method4(int count, string text)
     }
     return result + text;
 }
-// string result = Method4(10, "z");
-// Console.WriteLine(result);
+//  string result = Method4(10, "z");
+//  Console.WriteLine(result);
 
 
 for (int i = 2; i <= 10; i++)
@@ -123,14 +104,15 @@ string text = "- Я думаю, - сказал князь, улыбаясь, - �
 //            012345
 // s[3] //r
 
-// string Replace(string text, char oldValue, char newValue)
-// {
-//      string result = String.Empty;
-//      int length = text.Length;
-//      for (int i= 0; i < length; i++)
-//      {
-//         if(text[i] == oldValue) result + $"{newValue}";
-//         else result + $"{str[i]}";
-//      }
-//      return result;
-// }
+string Replace(string text, char oldValue, char newValue)
+{
+     string result = String.Empty;
+
+     int length = text.Length;
+     for (int i= 0; i < length; i++)
+     {
+        if(text[i] == oldValue) result + $"{newValue}";
+        else result + $"{str[i]}";
+     }
+     return result;
+}
